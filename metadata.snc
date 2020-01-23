@@ -1,6 +1,6 @@
 "Metadata": {
           "SNC::Parameter::Metadata": {
-               "rgName":{
+               "rg":{
                      "datasource":"ServiceNow::Pools:: ResourceGroupPool.getByLDC"
                 },
 "vm_size":{
