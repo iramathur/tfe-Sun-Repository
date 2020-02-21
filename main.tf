@@ -87,6 +87,7 @@ resource "azurerm_lb_probe" "lb_probe" {
   interval_in_seconds = 5
   number_of_probes    = var.vm_count_per_subnet
 }
+
 resource "azurerm_network_interface" "nic" {
   name                = "nic${count.index}${random_id.server.hex}"
   location            = var.region
@@ -130,4 +131,8 @@ resource "azurerm_virtual_machine" "vm" {
 
   os_profile_windows_config {
   }
+  tags = {
+    environment = "staging"
+  }
+
 }
