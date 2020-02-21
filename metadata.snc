@@ -3,7 +3,6 @@
                "rg":{
                      "datasource":"ServiceNow::Pools:: ResourceGroupPool.getByLDC"
                 },
-
 "network":{
               "datasource":"ServiceNow::Pools::NetworkPool.getObjectsByLDC"
           },
@@ -11,6 +10,6 @@
               "datasource":"ServiceNow::Pools:: SubnetPool.getObjectsByNetwork",
               "datasourceFilter":{"Network":"network"}
           }
-
+            
             }
     }
