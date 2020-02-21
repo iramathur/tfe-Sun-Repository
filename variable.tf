@@ -10,9 +10,9 @@ variable "clientSecret" {
 variable "tenantId" {
 }
 
-variable "rg" {
+variable  "rg" {
   description = "The name of the resource group in which to create the virtual network."
-  default     = "terraform-group"
+  default     = "EsunRG"
 }
 
 variable "rg_prefix" {
@@ -46,13 +46,14 @@ variable "region" {
 
 variable "network" {
   description = "The name for the virtual network."
-  default     = "vnet"
+  default     = "AutoNetwork"
 }
 
 variable "address_space" {
   description = "The address space that is used by the virtual network. You can supply more than one address space. Changing this forces a new resource to be created."
   default     = "10.0.0.0/16"
 }
+
 variable "subnet_prefix" {
   description = "The address prefix to use for the subnet."
   default     = "10.0.10.0/24"
@@ -69,7 +70,7 @@ variable "storage_replication_type" {
 }
 variable "subnet"{
 description = "Defines the subnetname"
-default = "sbnet"
+default = "autosubnet"
 }
 
 variable "vm_size" {
@@ -101,6 +102,7 @@ variable "admin_username" {
   description = "administrator user name"
   default     = "vmadmin"
 }
+
 variable "admin_password" {
   description = "administrator password (recommended to disable password auth)"
   default     = "admin01!"
