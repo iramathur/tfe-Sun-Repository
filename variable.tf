@@ -14,6 +14,11 @@ variable "rg" {
     description = "The shortened abbreviation to represent your resource group that will go on the front of some resources."
   }
 
+variable "owner"{
+    description = "Server owner" 
+    }
+
+
 variable "rg_prefix" {
   description = "The shortened abbreviation to represent your resource group that will go on the front of some resources."
   default     = "azuretg"
