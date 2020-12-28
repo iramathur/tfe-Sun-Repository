@@ -82,6 +82,10 @@ variable "image_publisher" {
   default     = "MicrosoftWindowsServer"
 }
 
+variable "owner"{
+    description = "Server owner"
+    }
+
 variable "image_offer" {
   description = "the name of the offer (az vm image list)"
   default     = "WindowsServer"
