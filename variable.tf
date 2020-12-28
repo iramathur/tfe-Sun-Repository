@@ -12,10 +12,12 @@ variable "tenantId" {
 
 variable "rg" {
     description = "The shortened abbreviation to represent your resource group that will go on the front of some resources."
+    default = "ResourceGroup"
   }
 
 variable "owner"{
-    description = "Server owner" 
+    description = "Server owner"
+    default = "Sundaresan"
     }
 
 
