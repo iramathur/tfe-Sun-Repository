@@ -94,8 +94,9 @@ variable "image_publisher" {
   default     = "MicrosoftWindowsServer"
 }
 
-variable "owner"{
-    description = "Server owner"
+variable "owner_Group"{
+    description = "Server owner group"
+    default = "CMP"
     }
 
 variable "image_offer" {
