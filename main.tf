@@ -133,8 +133,7 @@ resource "azurerm_virtual_machine" "vm" {
   }
   tags = {
     environment = "staging"
-    owner_Group     = var.owner_Group
-    Department  = var.Department
+   
   }
 
 }
