@@ -10,10 +10,6 @@ variable "clientSecret" {
 variable "tenantId" {
 }
 
-variable  "rg" {
-  description = "The name of the resource group in which to create the virtual network."
-  default     = "EsunRG"
-}
 
 variable "rg_prefix" {
   description = "The shortened abbreviation to represent your resource group that will go on the front of some resources."
