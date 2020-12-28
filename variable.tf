@@ -21,6 +21,11 @@ variable "owner"{
     }
 
 
+variable "Department"{
+    description = "DepartmentName"
+    default = "ITOMQE"
+    }
+
 variable "rg_prefix" {
   description = "The shortened abbreviation to represent your resource group that will go on the front of some resources."
   default     = "azuretg"
