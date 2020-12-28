@@ -3,7 +3,7 @@ resource "random_id" "server" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "${var.rg}-${random_id.server.hex}"
+  name     = "${var.rg}"
   location = var.region
 }
 
