@@ -15,16 +15,8 @@ variable "rg" {
     default = "ResourceGroup"
   }
 
-variable "owner"{
-    description = "Server owner"
-    default = "Sundaresan"
-    }
 
 
-variable "Department"{
-    description = "DepartmentName"
-    default = "ITOMQE"
-    }
 
 variable "rg_prefix" {
   description = "The shortened abbreviation to represent your resource group that will go on the front of some resources."
@@ -94,10 +86,7 @@ variable "image_publisher" {
   default     = "MicrosoftWindowsServer"
 }
 
-variable "owner_Group"{
-    description = "Server owner group"
-    default = "CMP"
-    }
+
 
 variable "image_offer" {
   description = "the name of the offer (az vm image list)"
